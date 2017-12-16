@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8" />
+    <title> Flappy Bird Clone </title>
+    <bgsound  src="bg-music.mid"></bgsound>
+    <script type="text/javascript" src="phaser.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    
+</head>
+
+<body>
+  <style media="screen" type="text/css"> 
+  #backgroundaudio { 
+  display: block; 
+  position: fixed; 
+  bottom: -43px; 
+  left: 5px; 
+  -webkit-transition: all 1s ease-in-out; 
+  -moz-transition: all 1s ease-in-out; 
+  -ms-transition: all 1s ease-in-out; 
+  -o-transition: all 1s ease-in-out; 
+  transition: all 1s ease-in-out; 
+  } 
+  #backgroundaudio:hover { 
+  bottom: 0; 
+  -webkit-transition: all 1s ease-in-out; 
+  -moz-transition: all 1s ease-in-out; 
+  -ms-transition: all 1s ease-in-out; 
+  -o-transition: all 1s ease-in-out; 
+  transition: all 1s ease-in-out; 
+  } 
+  #backgroundaudio audio { 
+  background: #ffffff; 
+  padding: 5px; 
+  display: table-cell; 
+  vertical-align: middle; 
+  height: 43px; 
+  z-index: 9998; 
+  } 
+  #backgroundaudio i { 
+  font-size: 40px; 
+  display: block; 
+  background: #ffffff; 
+  padding: 5px; 
+  width: 50px; 
+  float: none; 
+  margin-bottom: -1px; 
+  z-index: 9999; 
+  } 
+  </style> 
+  <div id="backgroundaudio"> 
+	  <i class="fa fa-volume-up"></i> 
+	  <audio autoplay="true" controls="" loop="" preload=""> 
+		  <source src="assets/Jingle-Bells.mp3"></source> 
+	  </audio> 
+  </div> 
+<div id="game-over" style="display: block;">
+      <h1 style="display: none;">GAME OVER</h1>
+    <input type="button" value="Restart Game" name="PlayAgain" OnClick="restartGame: function ()" style="display: none;">
+    </div>
+</body>
+
+</html>
